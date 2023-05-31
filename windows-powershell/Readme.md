@@ -55,17 +55,27 @@ oh-my-posh init pwsh --config C:\Projects\TerminalSetup\windows-powershell\oh-my
 **Exact place example:**
 
 ```
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "defaultProfile": "uid-of-profile",
     "profiles": 
     {
-        "defaults": {
-            
-    "useAcrylic": true, 
-    "opacity": 50
-        },
-        "list": 
-        [ { profile1}, { profile2}
+      "defaults": {    
+         "useAcrylic": true, 
+        "opacity": 50
+                  },
+       "list": 
+        [ 
+            { profile1},
+             { profile2}
         ]
+    }
            
 ```
+
+## Additional options of settings.json file
+
+* Copy the contents on terminal when selected 
+```
+"copyOnSelect": true
+```
+
 
